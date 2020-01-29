@@ -1,3 +1,4 @@
+#replace anagrams from list of anagrams
 strs=["eat", "tea", "tan", "ate", "nat", "bat"]
 main=[]
 list1=[]
