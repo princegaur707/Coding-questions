@@ -10,6 +10,7 @@ while(t>0):
         if(s[i-1]==s[i]):
             cnt+=1
         else:
+            
             if(cnt>0):
                 str2=str2+str(cnt)
                 cnt=1
