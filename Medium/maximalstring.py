@@ -1,5 +1,5 @@
 # checking effectiveness of maximal string : for ex- aaaaabbbccc-a5b3c3
-t=int(input())
+t=int(input()
 while(t>0):
     s=input()
     str2=""
