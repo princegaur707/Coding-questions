@@ -1,7 +1,7 @@
 # checking effectiveness of maximal string : for ex- aaaaabbbccc-a5b3c3
 t=int(input())
 while(t>0):
-    s=input()
+    s=input(
     str2=""
     cnt=1
     l1=len(s)
