@@ -3,7 +3,7 @@ b=int(input("Enter choice: "))
 if(bool(b)==True):
     for i in range(n):
         print("*" * (i+1), end ="")
-        print("\n"
+        print("\n")
 else:
     for i in range(n):
         print("*"*(n-i), end="")
