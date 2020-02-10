@@ -1,4 +1,4 @@
-n=int(input("Enter no of rows: "))
+n=int(input("Enter no of rows : "))
 b=int(input("Enter choice : "))
 if(bool(b)==True):
     for i in range(n):
