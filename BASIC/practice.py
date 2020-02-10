@@ -1,5 +1,5 @@
-n=int(input("Enter no of rows : "))
-b=int(input("Enter choice : "))
+n=int(input("Enter no of rows :  "))
+b=int(input("Enter choice :  "))
 if(bool(b)==True):
     for i in range(n):
         print("*" * (i+1), end ="")
