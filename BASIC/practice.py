@@ -1,6 +1,6 @@
 n=int(input("Enter no of rows :   "))
 b=int(input("Enter your choice :  "))
-if(bool(b)== True):
+if(bool(b)==True):
     for i in range(n):
         print("*" * (i+1), end ="")
         print("\n")
