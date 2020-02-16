@@ -5,7 +5,7 @@ while(t):
     b=int(input("Enter choice: "))
     if(bool(b)==True):
         
-        for i in range(n):
+        for i in range(n) :
             print("*" * (i+1), end ="")
             print("\n")
     else :
