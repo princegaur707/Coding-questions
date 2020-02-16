@@ -12,4 +12,4 @@ while(t):
         for i in range(n):
             print("*"*(n-i), end="")
             print("\n")
-    t-=1
+    t-= 1
