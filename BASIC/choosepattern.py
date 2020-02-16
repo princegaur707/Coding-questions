@@ -1,5 +1,6 @@
 t=int(input("Enter no. of iterations: "))
 while(t):
+    
     n=int(input("Enter no of rows: "))
     b=int(input("Enter choice: "))
     if(bool(b)==True):
