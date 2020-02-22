@@ -6,13 +6,12 @@ print(getdate())
 if(a=="prince"):
     with open ("prince.txt") as pri:
         content=pri.readlines()
-        print(content)
+        print("\n".join(content))
 elif(a=="abhishek"):
     with open ("abhi.txt") as ab:
         content=ab.readlines()
-        print(content)
+        print("\n".join(content))
 elif(a=="ishjot"):
     with open ("ish.txt") as ish:
         content=ish.readlines()
-        for i in content:
-            print(i)
+        print("\n".join(content))
