@@ -10,9 +10,9 @@ if(a=="prince"):
 elif(a=="abhishek"):
     with open ("abhi.txt") as ab:
         content=ab.readlines()
-        print(content,end="\n")
+        print(content)
 elif(a=="ishjot"):
     with open ("ish.txt") as ish:
         content=ish.readlines()
-        print(content)
-     
+        for i in content:
+            print(i)
