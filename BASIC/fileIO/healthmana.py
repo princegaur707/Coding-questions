@@ -12,6 +12,6 @@ elif(a=="abhishek"):
         content=ab.readlines()
         print("\n".join(content))
 elif(a=="ishjot"):
-    with open ("ish.txt") as ish:
-        content=ish.readlines()
+    with open ("ish.txt") as isa:
+        content=isa.readlines()
         print("\n".join(content))
