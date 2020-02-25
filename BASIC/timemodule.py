@@ -1,3 +1,5 @@
+#time.time() is used to calculate time 
+#in this code we have compared the execution time of foor loops and while loop
 import time
 initial=time.time()
 print(f"initial time is {initial}")
