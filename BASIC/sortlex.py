@@ -1,8 +1,14 @@
-a=['a','b','ab','aab','abb','aba','acc']
+# strs = ['aa', 'BB', 'zz', 'CC']
+#   print sorted(strs)  ## ['BB', 'CC', 'aa', 'zz'] (case sensitive)
+#   print sorted(strs, reverse=True)   ## ['zz', 'aa', 'CC', 'BB']
+
+# strs = ['ccc', 'aaaa', 'd', 'bb']
+#   print sorted(strs, key=len)  ## ['d', 'bb', 'ccc', 'aaaa']
+
+a=['aab','a','ab','b','abb','aba','acc']
+a=sorted(a)
+#a=sorted(a,key=len)
 print(a)
-for i in range(1,len(a)):
-    if(len(a[i-1])>len(a[i])):#logn
-        a[i-1],a[i]=a[i],a[i-1]
-    elif(len(a[i-1])==len(a[i])):
-        a.sort(i-1,i)
+a=sorted(a,key=len)
+#a=sorted(a)
 print(a)
