@@ -1,4 +1,4 @@
-#insert at last
+#insert at last delete first view list
 class node:
     def __init__(self,data):
         self.data=data
@@ -6,7 +6,7 @@ class node:
 class LinkedList:
     def __init__(self):
         self.start=None
-    def deleteFirst(self):
+    def deletefirst(self):
         if self.start==None:
             print("Linked list is empty")
         else:
@@ -25,7 +25,7 @@ class LinkedList:
             print("List is empty")
         else:
             temp=self.start
-            while temp.next!=None:
+            while temp!=None:
                 print(temp.data,end=" ")
                 temp=temp.next
 mylist=LinkedList()
