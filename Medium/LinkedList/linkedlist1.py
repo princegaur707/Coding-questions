@@ -13,7 +13,7 @@ class LinkedList:
             self.start=self.start.next#no need to use anything to delete as python automatically deletes anything which is not pointed anywhere
     def insertLast(self,value):
         newNode = node(value)
-        if(self.start=None):
+        if(self.start==None):
             self.start=newNode
         else:
             temp=self.start
@@ -22,19 +22,19 @@ class LinkedList:
             temp.next=newNode
     def viewlist(self):
         if self.start==None:
-            print("List is empty"")
+            print("List is empty")
         else:
             temp=self.start
             while temp.next!=None:
+                print(temp.data,end=" ")
                 temp=temp.next
-                print(temp,value)
-            temp.next=newNode
 mylist=LinkedList()
 mylist.insertLast(10)   
 mylist.insertLast(20) 
 mylist.insertLast(30)
 mylist.insertLast(40)
 mylist.insertLast(50)  
-mylist.viewList()
+mylist.viewlist()
 mylist.deletefirst()
-mylist.viewList()          
+print("\n")
+mylist.viewlist()          
