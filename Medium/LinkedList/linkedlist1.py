@@ -1,4 +1,4 @@
-#insert at last delete first view list
+#insert at last, delete first, view list
 class node:
     def __init__(self,data):
         self.data=data

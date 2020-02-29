@@ -6,6 +6,12 @@
 #     global glo
 #     glo = 30
 #     print(glo)
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        S
+    
 # glo = 10
 # outer()
 # print( glo)
@@ -18,8 +24,8 @@
 #     dicts[l[1]+7] = l[0]
 #     print (l[0],l[1])
 # print(dicts)
-dig = 0
-for i in range(0.0, 5.0, 0.1):
-    dig += i
-    i+=0
-print(dig)
+# dig = 0
+# for i in range(0.0, 5.0, 0.1):
+#     dig += i
+#     i+=0
+# print(dig)
