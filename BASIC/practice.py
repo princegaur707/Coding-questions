@@ -1,6 +1,14 @@
-d={1:'a',2:'b',3:'c'}
-print(d.values())
-
+l=10
+def function1():
+    global l
+    l=l+45
+    print(f"in function{l}")
+    print(l)
+print("Before calling")
+print(l)
+function1()
+print("After calling")
+print(l)
 # glo = 10
 # outer()
 # print( glo)
