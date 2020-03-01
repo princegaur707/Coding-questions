@@ -1,14 +1,4 @@
-l=10
-def function1():
-    global l
-    l=l+45
-    print(f"in function{l}")
-    print(l)
-print("Before calling")
-print(l)
-function1()
-print("After calling")
-print(l)
+print(print(5))
 # glo = 10
 # outer()
 # print( glo)
