@@ -1,40 +1,5 @@
-class node:
-    def __init__(self,data):
-        self.data=data
-        self.next=None
-class LinkedList:
-    def __init__(self):
-        self.start=None
-    def insert(self,value):
-        newnode=node(value)
-        if(self.start==None):
-            self.start=newnode
-        else:
-            temp=self.start
-            while(temp.next!=None):
-                temp=temp.next
-            temp.next=newnode
-    def view(self):
-        if(self.start==None):
-            print("linked list is empty")
-        else:
-            temp=self.start
-            while(temp!=None):
-                print(temp.data,end=" ")
-                temp=temp.next
-    def deletefirst(self):
-            if(self.start==None):
-                print("Linied list is empty")
-            else:
-                self.start=self.start.next
-nlist=LinkedList()
-nlist.insert(10)
-nlist.insert(20)
-nlist.insert(30)
-nlist.view()
-print("\n")
-nlist.deletefirst()
-nlist.view()
+d={1:'a',2:'b',3:'c'}
+print(d.values())
 
 # glo = 10
 # outer()
