@@ -1,7 +1,9 @@
 numbers=[0,1,4,8,6]
 digits=numbers
-digits[3:]=9
+#digits[3:]=9
 print(numbers)
+print(type(type(1)))
+print(type(int))
 # glo = 10
 # outer()
 # print( glo)
