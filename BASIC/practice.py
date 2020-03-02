@@ -1,4 +1,8 @@
-print(print(5))
+numbers=[0,1,4,8,6]
+digits=numbers
+#digits[3:]=9
+print(numbers)
+print(digits)
 # glo = 10
 # outer()
 # print( glo)
