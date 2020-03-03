@@ -1,10 +1,11 @@
-numbers=[0,1,4,8,6]
-digit=numbers
-digit[3:]=9
-print(numbers)
-# print(int(not(7<7.0)))
-# a_list=[1,9,8,4]
-# print([item**2 for item in a_list])
+print("hell world")
+# numbers=[0,1,4,8,6]
+# digit=numbers
+# digit[2:]=['91561','gerg']
+# print(numbers)
+# # print(int(not(7<7.0)))
+# # a_list=[1,9,8,4]
+# # print([item**2 for item in a_list])
 # a=b=[1]
 # c=d=[1],[1]
 # print(a is b)
