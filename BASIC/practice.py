@@ -1,4 +1,4 @@
-print(7<7.0)
+print(int(not(7<7.0)))
 # glo = 10
 # outer()
 # print( glo)
