@@ -5,6 +5,14 @@ a=b=[1]
 c=d=[1],[1]
 print(a is b)
 print(c is d)
+print("________________________")
+letters={'e','l','e','g','h','l','v'}
+print(letters)
+new=list(letters)[::-1]
+print("new line new")
+print(new)
+out=new[-2]*4
+print(out)
 # glo = 10
 # outer()
 # print( glo)
