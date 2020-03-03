@@ -1,6 +1,4 @@
-for i in range(1,5527):
-    if(5527%i==0):
-        print(i)
+print(7<7.0)
 # glo = 10
 # outer()
 # print( glo)
