@@ -1,4 +1,6 @@
 print(int(not(7<7.0)))
+a_list=[1,9,8,4]
+print([item**2 for item in a_list])
 # glo = 10
 # outer()
 # print( glo)
