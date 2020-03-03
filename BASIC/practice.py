@@ -1,19 +1,24 @@
-print(int(not(7<7.0)))
-a_list=[1,9,8,4]
-print([item**2 for item in a_list])
-a=b=[1]
-c=d=[1],[1]
-print(a is b)
-print(c is d)
-print("________________________")
-letters={'e','l','e','g','h','l','v'}
-print(letters)
-new=list(letters)[::-1]
-print("new line new")
-print(new)
-out=new[-2]*4
-print(out)
-# glo = 10
+numbers=[0,1,4,8,6]
+digit=numbers
+digit[3:]=9
+print(numbers)
+# print(int(not(7<7.0)))
+# a_list=[1,9,8,4]
+# print([item**2 for item in a_list])
+# a=b=[1]
+# c=d=[1],[1]
+# print(a is b)
+# print(c is d)
+# print("________________________")
+# for i in range (10):
+#     letters={'e','l','e','g','h','l','v'}
+#     print(f"set{letters}")
+#     new=list(letters)[::-1]
+# # print("new line new")
+#     print(new)
+# out=new[-2]*4
+# print(out)
+# # glo = 10
 # outer()
 # print( glo)
 #{0:1,8:0}
