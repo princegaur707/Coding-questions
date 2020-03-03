@@ -1,9 +1,6 @@
-numbers=[0,1,4,8,6]
-digits=numbers
-#digits[3:]=9
-print(numbers)
-print(type(type(1)))
-print(type(int))
+for i in range(1,5527):
+    if(5527%i==0):
+        print(i)
 # glo = 10
 # outer()
 # print( glo)
