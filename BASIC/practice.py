@@ -1,6 +1,6 @@
-from itertools import count
-for a in count(-1,.5):
-    print(a,end=',')
+# from itertools import count
+# for a in count(-1,.5):
+#     print(a,end=',')
 # values=[1,2,1,3]
 # nums=set(values)
 # def checkit(num):
