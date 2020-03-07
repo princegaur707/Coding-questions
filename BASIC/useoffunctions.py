@@ -7,4 +7,5 @@ s.reverse()
 print(s)
 str1=" ".join(s)
 print(str1)
+s=s.split()
 

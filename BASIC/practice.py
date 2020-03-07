@@ -1,4 +1,9 @@
-print("hell world")
+import re
+temp='indiparker@ind.com'
+temp1=''
+if(re.search(r'@ind\.',temp)):
+    temp1=re.sub(r'i\w+(\.com)',r'edu\1',temp)
+print(temp1)
 # numbers=[0,1,4,8,6]
 # digit=numbers
 # digit[2:]=['91561','gerg']
