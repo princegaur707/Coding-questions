@@ -1,10 +1,14 @@
 def func1(d):
-    print("1")
-    d()
-    print("3")
+    def func2():
+        print("1")
+        d()
+        print("3")
+    return func2
+@func1
 def d():
     print("2")
-func1(d)
+#d=func1(d) @ is the alternative of this line
+d()
 
 # def executor(func):
 #     print(func([1,2,3]))
