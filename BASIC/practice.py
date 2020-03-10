@@ -1,5 +1,5 @@
 string="1"
-print(string.split('1'))
+print(len(string.split('1')))
 # from itertools import count
 # for a in count(-1,.5):
 #     print(a,end=',')
