@@ -1,3 +1,4 @@
+# __dict__ expalanation
 class Employee:
     leaves=8
 prince= Employee()
