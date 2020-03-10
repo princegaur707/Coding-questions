@@ -10,6 +10,7 @@ larry=Employee()
 harry.name='Harry'
 harry.salary=455
 harry.role="Instructor"
+harry.leaves=10 #this is creating another instance of name leaves in harry not editing the class Employee one
 
 larry.name="Larry"
 larry.salary=4554
