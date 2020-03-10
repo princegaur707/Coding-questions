@@ -15,6 +15,8 @@ class Employee:
         cls.leaves=newleaves
 
 harry= Employee("Harry",555) # arguments can be passed due to constructor
+larry=Employee("Larry",556)
 print(harry.leaves)
 harry.change_leaves(30)
 print(harry.leaves)
+print(larry.leaves)
