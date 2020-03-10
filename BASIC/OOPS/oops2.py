@@ -4,8 +4,8 @@ prince= Employee()
 pri= Employee()
 print(f"Employee Leaves: {Employee.leaves}")
 print(f"pri leaves: {pri.leaves}")
-pri.leaves=9
+pri.leaves=9 #Instantaneous variable
 print("After Updating:-")
 print(f"                    Employee Leaves: {Employee.leaves}")
 print(f"                    pri leaves: {pri.leaves}")
-print(pri.__dict__)
+print(pri.__dict__) #dict is a attribute

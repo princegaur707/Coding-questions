@@ -3,7 +3,7 @@
 #Why to make Class?
 #Python follow DRY: Don't repeat yourself
 #To restrict the access of some functions or objects
-class Student:
+class Student: #Try to name class with capital letter
     pass    #to not to get the error
 
 harry=Student()
