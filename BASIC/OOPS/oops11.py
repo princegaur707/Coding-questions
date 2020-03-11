@@ -1,5 +1,6 @@
+#Multilevel Inheritance
 class Dad:
-    basketball=1
+    basketball=1 #It can be accessed with Grandson object also
 class Son(Dad):
     dance=1
     def isdance(self):
