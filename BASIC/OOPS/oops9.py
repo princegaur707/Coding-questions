@@ -6,6 +6,7 @@ class Employee:
         self.salary=asalary
     def printdetails(self):
         return f"name is {self.name} salary is {self.salary}"
+        
 class programmer(Employee):
     def printprog(self):
         return f"Programmer's name is {self.name} and Salary is {self.salary}"

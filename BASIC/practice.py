@@ -1,13 +1,10 @@
-class node:
-    def __init__(self,data):
-        self.data=data
-        self.next=None
-class LinkedList:
-    def __init__(self):
-        self.start= None
-    def insert(self,value):
-        self.newnode=node(value)
-        if(self.start)
+a=[1,2,3,4]
+b=[]
+c=iter(a)
+while(a!=b):
+    n=next(c)
+    b.append(n)
+print(b)
 # from itertools import count
 # for a in count(-1,.5):
 #     print(a,end=',')

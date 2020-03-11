@@ -1,4 +1,4 @@
-#Multi level Inheritance
+#Multiple Inheritance
 class Employee:
     leaves=8
     def __init__(self,aname, asalary):
@@ -12,8 +12,8 @@ class Player():
     def __init__(self,aname,agame):
         self.name=aname
         self.game=agame
-    def printplayer():
-    return f"Player name is: {name} Game name is: {game}"
+    def printplayer(self):
+        return f"Player name is: {self.name} Game name is: {self.game}"
 
 class Coolprogrammer(Player,Employee):# variables of that class whose name is coming ahead will overwrite to that of other in case of same name
     #leaves=10    It can overwrite all other values 
@@ -22,7 +22,7 @@ class Coolprogrammer(Player,Employee):# variables of that class whose name is co
 
 harry= Employee("Harry",555) 
 larry=Employee("Larry",556)
-jerry=Coolrogrammer("Jerry",["tennis","Football"])
-print(jerry.printprog)
+jerry=Coolprogrammer("Jerry",["tennis","Football"])
+print(jerry.printprog())
 print(jerry.leaves)
 
