@@ -1,8 +1,10 @@
 a=[1,2,3,4]
 b=[]
 c=iter(a)
+print(list(iter(a)))
 while(a!=b):
     n=next(c)
+    print(n)
     b.append(n)
 print(b)
 # from itertools import count

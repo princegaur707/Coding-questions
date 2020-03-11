@@ -1,4 +1,4 @@
-#For one line shortcut we are using args and kwargs for class method as an alternative for constructor
+#For one line shortcut we are using args  for class method as an alternative for constructor
 class Employee:
     leaves=8
     def __init__(self,aname, asalary):
@@ -10,9 +10,11 @@ class Employee:
     @classmethod
     def change_leaves(cls,newleaves): 
         cls.leaves=newleaves
+   
     @classmethod
     def from_dash(cls,string):
         return cls(*string.split("-"))
+        
 harry= Employee("Harry",555) 
 larry=Employee("Larry",556)
 karan=Employee.from_dash("Karan-557")
