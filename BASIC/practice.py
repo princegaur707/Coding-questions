@@ -1,5 +1,13 @@
-string="1"
-print(len(string.split('1')))
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class LinkedList:
+    def __init__(self):
+        self.start= None
+    def insert(self,value):
+        self.newnode=node(value)
+        if(self.start)
 # from itertools import count
 # for a in count(-1,.5):
 #     print(a,end=',')
