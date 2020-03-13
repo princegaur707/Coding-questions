@@ -3,7 +3,8 @@ from collections import Counter
 
 print("________________________________________________________________________________________")
 c=Counter("Allahabad")
-print(c) #elements are arranged in decreasing order of frequency in form of dictionary with frequency as a value
+print(c) #elements are arranged in decreasing order of frequency(if frequency is same then alphabetic order)
+#in form of dictionary with frequency as a value
 print("________________________________________________________________________________________")
 
 for i in c.elements():

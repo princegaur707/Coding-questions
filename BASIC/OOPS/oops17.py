@@ -17,6 +17,6 @@ class Rectangle(Shape):
     def printarea(self):
         return self.length * self.bredth
 
-s1=Rectangle() #After decalring object we will get error if don't declare prinarea function in any method 
+s1=Rectangle() #After decalaring object we will get error if don't declare prinarea function in any method 
 #because abstract method is saying to must define the print are method  so with this way we can force to have certain function by every method
 print(s1.printarea())
