@@ -1,6 +1,7 @@
-#from abc import ABCMeta,abstractmethod: for python version below 3.4
+#abstract class :
+#advantage: when u want any function or functions must to have by every method then this can be used
 #We can't make the object of abstract base class
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod#from abc import ABCMeta,abstractmethod: for python version below 3.4
 
 class Shape(ABC): #class Shape(metaclass=ABCMeta):for python version below 3.4
     @abstractmethod # Abstract method is must to have by everyone

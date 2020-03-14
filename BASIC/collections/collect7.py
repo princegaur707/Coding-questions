@@ -1,5 +1,6 @@
 #nametuple
-#advantage: increase readability, it supports both access from key value and iteration(index), the functionality that dictionaries lack.
+#advantage: increase readability, it supports both access from key value and iteration(index), the functionality that tuples lack
+# so, now we can access the element with the use of the name of that 
 from collections import namedtuple
 
 Student= namedtuple('student',['name','age','rollno'])
@@ -11,5 +12,5 @@ print("Name:",student1.name) #here it is possible to give name as a parameter no
 print("Age:",student1.age)
 print("Roll No:",student1.rollno)
 
-print(student1._fields)
+print(student1._fields) # return tuple of all references given
 print(student2._replace(name='D'))
