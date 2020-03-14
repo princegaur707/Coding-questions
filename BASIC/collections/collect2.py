@@ -10,7 +10,7 @@
 # 8. count() :- This function counts the number of occurrences of value mentioned in arguments.
 # 9. extend(iterable) :- This function is used to add multiple values at the right end of deque. The argument passed is an iterable.
 # 10. extendleft(iterable) :- This function is used to add multiple values at the left end of deque. The argument passed is an iterable. 
-# Order is reversed as a result of left appends.
+# Order is reversed as a result of left appends.eg: extendleft('789')=>[9,8,7]
 # 11. reverse() :- This function is used to reverse order of deque elements.
 # 12. rotate() :- This function rotates the deque by the number specified in arguments. If the number specified is negative, rotation occurs to left. 
 # Else rotation is to right.
@@ -23,7 +23,7 @@ d.append(1)
 d.append(2)
 d.append(3)
 
-d.appendleft(4) #Similarly extendleft can also be used
+d.appendleft(4) #Similarly extendleft,popleft can also be used
 d.appendleft(5)
 d.appendleft(6)
 

@@ -1,6 +1,6 @@
-#An OrderedDict is a dictionary subclass that remembers the order that keys were first inserted
+#An OrderedDict is a dictionary subclass that remembers the order in which keys were inserted
 #Key value Change: If the value of a certain key is changed, the position of the key remains unchanged in OrderedDict.
-#Deletion and Re-Inserting: Deleting and re-inserting the same key will push it to the back as OrderedDict however maintains the order of insertion.
+#Deletion and Re-Inserting: Deleting and re-inserting the same key will insert it at last.
 from collections import OrderedDict
 
 OrderedDict1=OrderedDict()
@@ -8,6 +8,8 @@ OrderedDict1['name']="Prince"
 OrderedDict1['nationality']="Indian"
 OrderedDict1['age']=22
 print(OrderedDict1)
+
+#print(type(OrderedDict1))
 
 #Normal Dictionary
 Ordinarydict1={}
