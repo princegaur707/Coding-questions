@@ -9,7 +9,7 @@ b = Counter({'geeks' : 4, 'for' : 1,
 for i in b.elements(): 
     print ( i, end = " ")  
 print("\n")
-print(b.most_common(2))  #It will return the top most 2 elements according to frequency
+print(b.most_common(2))  #It will print the top most 2 elements according to frequency
 print("\n________________________________________________________________________________________")
 
 c = Counter([1, 2, 21, 12, 2, 44, 5, 

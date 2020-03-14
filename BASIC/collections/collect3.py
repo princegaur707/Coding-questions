@@ -1,4 +1,4 @@
-#Some more about deque
+#Some more about deque:
 from collections import deque
 
 d=deque()
