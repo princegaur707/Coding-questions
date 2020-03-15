@@ -7,18 +7,18 @@ class Employee:
     def explain(self):
         return f"This employee is {self.fname} {self.lname}"
     
-    @property
+    @property               #being used when we wanna change the fname or lname
     def email(self):
         if(self.fname==None or self.lname==None):
             return("Email is not already set")
         return f"{self.fname}.{self.lname}@gmail.com"
 
-    @email.setter
+    @email.setter           #being used when we wanna email but it is not directly not in form of fname and lname
     def email(self,string):
         names=string.split("@")[0]#It will take the first element of the list formed
         self.fname,self.lname=names.split(".")
-        
-    @email.deleter
+
+    @email.deleter      #to delete the email 
     def email(self):
         self.fname=None #For deleting we just set it to None
         self.lname=None
