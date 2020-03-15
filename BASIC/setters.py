@@ -7,13 +7,13 @@ class Employee:
     def explain(self):
         return f"This employee is {self.fname} {self.lname}"
     
-    @property               #being used when we wanna change the fname or lname
+    @property   #decorator being used when we wanna get new fname or lname without parenthesis(encapsulation) eg. access with email not email()
     def email(self):
         if(self.fname==None or self.lname==None):
-            return("Email is not already set")
+            return("Email is not set already")
         return f"{self.fname}.{self.lname}@gmail.com"
 
-    @email.setter           #being used when we wanna email but it is not directly not in form of fname and lname
+    @email.setter           #being used when we wanna change email but it is not directly in form of fname and lname
     def email(self,string):
         names=string.split("@")[0]#It will take the first element of the list formed
         self.fname,self.lname=names.split(".")
