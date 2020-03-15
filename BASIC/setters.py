@@ -27,6 +27,7 @@ suppor=Employee("Prince","Gaur")
 suppor1=Employee("A","B")
 print(suppor1.email)#no need to apply parenthesis after using property decorator
 suppor1.fname='C'
+print(suppor1.email)
 suppor1.email="this.is@gmail.com" #email.setter will do this
 print(suppor1.email)
 del suppor1.email
