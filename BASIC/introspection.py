@@ -1,4 +1,4 @@
-#setter and decorators
+#object introspection: to know about object(class,type,storing etc)
 class Employee:
     def __init__(self,fname,lname):
         self.fname=fname
@@ -23,12 +23,10 @@ class Employee:
         self.fname=None #For deleting we just set it to None
         self.lname=None
 
-suppor=Employee("Prince","Gaur")
-suppor1=Employee("A","B")
-print(suppor1.email)#no need to apply parenthesis after using property decorator
-suppor1.fname='C'
-print(suppor1.email)#now after email method using property this email will be dynamic updated
-suppor1.email="this.is@rediffmail.com" #email.setter will do this
-print(suppor1.email)
-del suppor1.email
-print(suppor1.email)
+skillf= Employee("Skill","N")
+print(type(skillf))
+print(id(skillf)) #every object is given unique id
+print(dir(skillf)) #will give all functions we can do 
+print("_____________________________________________________________________________________________________________________________________________________________________________________________________")
+import inspect
+print(inspect.getmembers(skillf))
