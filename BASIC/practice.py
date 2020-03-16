@@ -1,12 +1,15 @@
-a=[1,2,3,4]
-b=[]
-c=iter(a)
-print(list(iter(a)))
-while(a!=b):
-    n=next(c)
-    print(n)
-    b.append(n)
-print(b)
+import pygame
+import sys
+print(sys.path)
+# a=[1,2,3,4]
+# b=[]
+# c=iter(a)
+# print(list(iter(a)))
+# while(a!=b):
+#     n=next(c)
+#     print(n)
+#     b.append(n)
+# print(b)
 # from itertools import count
 # for a in count(-1,.5):
 #     print(a,end=',')
