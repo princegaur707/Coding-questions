@@ -1,4 +1,4 @@
-#Using for loops and else combinely : this can happen only when for loop ends normally
+#Using for loops and else combinely : else run only when for loop ends normally
 #If break will come into play then it means for loop do not ended normally
 khana=["roti","chawal","sabzi"]
 

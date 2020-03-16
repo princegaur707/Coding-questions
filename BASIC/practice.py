@@ -1,6 +1,19 @@
-import pygame
-import sys
-print(sys.path)
+stones=[2,7,4,1,8,1]
+l=len(stones)
+for i in range(l):
+    stones.sort()
+    if(len(stones)>=2):
+        a=stones.pop()
+        b=stones.pop()
+    elif(len(stones)==1):
+        print(stones[0])
+        break
+    else:
+        print(0)
+    if(a!=b):
+        stones.append(a-b if a>b else b-a)
+    stones.sort()
+
 # a=[1,2,3,4]
 # b=[]
 # c=iter(a)
