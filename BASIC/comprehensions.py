@@ -9,7 +9,7 @@ print(dict1)
 dict1={value:key for key,value in dict1.items()}
 print(dict1)
 
-#comprehension set: using {}(like comp. list but they return unique values)
+#comprehension set: using {}(this is like comprehension list but they return unique values)
 set1={i for i in [1,2,1,5,35,25,2,35]}
 print(set1)
 #comp. generators: using ()

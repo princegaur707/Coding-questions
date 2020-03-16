@@ -1,3 +1,4 @@
+import pygame
 from pygame import mixer 
 
 def musicloop(file,stopper):#file having music stopper: when we wanna stop
