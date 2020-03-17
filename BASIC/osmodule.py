@@ -2,7 +2,7 @@ import os
 
 #print(dir(os))
 #print(os.getcwd()) #get current working directory
-#os.chdir(("C://")) #we can current working directory using change directory
+#os.chdir(("C://")) #we can changeref current working directory using change directory
 #print(os.listdir("P://")) #gives list of all directory present at the current location
 #os.mkdir("This")#to make directory
 #os.mkdirs("A/B") #to make directories('B' will be inside of 'A')
