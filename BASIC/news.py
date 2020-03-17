@@ -5,4 +5,4 @@ def speak(str):
     speak=Dispatch("SAPI.SpVoice")
     speak.Speak(str)
 if __name__== "__main__":
-    speak("Tina is like fool")
+    speak("Let's start making this in professional way")

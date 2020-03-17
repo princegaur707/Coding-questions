@@ -1,4 +1,14 @@
 stones=[2,7,4,1,8,1]
+import heapq as hq
+hq._heapify_max(stones)
+while len(stones) >= 2:
+    x = hq._heappop_max(stones)
+    y = hq._heappop_max(stones)
+    z = x - y
+    hq.heappush(stones,z)
+    hq._heapify_max(stones)
+print(stones[0])
+
 l=len(stones)
 for i in range(l):
     stones.sort()
