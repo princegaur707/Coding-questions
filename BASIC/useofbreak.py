@@ -2,7 +2,7 @@ while(True):
     print("Prince")
     while(True):
         n=int(input())
-        #break #it moves the pointer outside the body of loop
+        break #it moves the pointer outside the body of loop so that's why "No" will be printed
         if(n<100):
             print("if")
             #break
