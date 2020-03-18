@@ -1,4 +1,4 @@
-nums=[1,2]
+nums=[10,9,2,5,3,7,101,18]
 cnt=1
 l=len(nums)
 arr=[]
@@ -8,7 +8,10 @@ for i in range(1,l):
         i+=1
     else:
         arr.append(cnt)
+        print(i)
+        cnt=1
         i+=1
+arr.append(cnt)
 print(arr)
 if(l==1):
     print("1")

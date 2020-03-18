@@ -1,28 +1,44 @@
-stones=[2,7,4,1,8,1]
-import heapq as hq
-hq._heapify_max(stones)
-while len(stones) >= 2:
-    x = hq._heappop_max(stones)
-    y = hq._heappop_max(stones)
-    z = x - y
-    hq.heappush(stones,z)
-    hq._heapify_max(stones)
-print(stones[0])
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None 
+class LinkedList():
+    def __init__(self):
+        self.start=None 
+    def insert(self,value):
+        newNode= node(value)
+        if(self.start==None):
+            self.start=newNode
+        else: 
+            temp=self.start
+            while(temp.next!=None):
+                temp=temp.next
+            temp.next=newNode
+    def delete(self):
+        if(self.start==None):
+            print("Linked list is empty!")
+        else:
+            self.start=self.start.next
+    def view(self):
+        if(self.start==None):
+            print("Linked List is empty")
+        else:
+            temp=self.start
+            while(temp!=None):
+                print(temp.data,end=" ")
+                temp=temp.next
 
-l=len(stones)
-for i in range(l):
-    stones.sort()
-    if(len(stones)>=2):
-        a=stones.pop()
-        b=stones.pop()
-    elif(len(stones)==1):
-        print(stones[0])
-        break
-    else:
-        print(0)
-    if(a!=b):
-        stones.append(a-b if a>b else b-a)
-    stones.sort()
+obj=LinkedList()
+obj.insert(1)
+obj.insert(2)
+obj.insert(3)
+obj.view()
+obj.delete()
+obj.delete()
+print()
+obj.view()
+
+    
 
 # a=[1,2,3,4]
 # b=[]
