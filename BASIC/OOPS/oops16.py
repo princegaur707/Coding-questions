@@ -26,3 +26,23 @@ print(emp1/emp2)
 print(emp1)#__str__ is being used even when it is not called
 print(repr(emp1))
 print(str(emp1))
+
+"""
+__sub__ for -
+__mul__ for *
+__truediv__ for /
+__floordiv__ for //
+__mod__ for %
+__pow__ for **
+__and__ for &
+__xor__ for ^
+__or__ for |
+__len__ for len()
+__getitem__ for indexing
+__setitem__ for assigning to indexed values
+__delitem__ for deleting indexed values
+__iter__ for iteration over objects (e.g., in for loops)
+__contains__ for in
+__call__ for calling objects as functions,
+ __int__, __str__, and the like, for converting objects to built-in types.
+"""

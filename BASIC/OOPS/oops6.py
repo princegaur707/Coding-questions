@@ -12,6 +12,7 @@ class Employee:
     @classmethod
     def change_leaves(cls,newleaves): 
         cls.leaves=newleaves
+        
     @classmethod
     def from_str(cls,string):
         params=string.split("-")
