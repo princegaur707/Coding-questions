@@ -1,3 +1,5 @@
+#Using propery we can treate function as variable although we can't set it to anything as it is method just it is allowing to it without
+#parenthesis
 class Pizza:
   def __init__(self, toppings):
     self.toppings = toppings
