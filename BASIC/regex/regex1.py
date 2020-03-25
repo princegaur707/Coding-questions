@@ -41,8 +41,8 @@ Python package index
 Int(‘111’,2) –> 7
 Int(‘a’,16) –>  10 
 prince
-"""
-pattern=re.compile(r'e$')
+""" #multiline string declaration
+pattern=re.compile(r'e$') # $ matches the end
 matches= pattern.finditer(mystr)
 for match in matches:
     print(match)
