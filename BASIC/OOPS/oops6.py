@@ -10,10 +10,6 @@ class Employee:
         return f"name is {self.name} salary is {self.salary}"
 
     @classmethod
-    def change_leaves(cls,newleaves): 
-        cls.leaves=newleaves
-        
-    @classmethod
     def from_str(cls,string):
         params=string.split("-")
         return cls(params[0],params[1])
