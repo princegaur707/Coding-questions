@@ -1,4 +1,12 @@
-
+sequence=[1,3,2,1]
+maxi=max(sequence)
+sequence.remove(maxi)
+print(sequence)
+print(sequence[(len(sequence)-1)])
+print(max(sequence))
+if(sequence[(len(sequence)-1)]==max(sequence)):
+    print(True)
+print(False)
 # a=[1,2,3,4]
 # b=[]
 # c=iter(a)
