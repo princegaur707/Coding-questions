@@ -1,12 +1,27 @@
-sequence=[1,3,2,1]
-maxi=max(sequence)
-sequence.remove(maxi)
-print(sequence)
-print(sequence[(len(sequence)-1)])
-print(max(sequence))
-if(sequence[(len(sequence)-1)]==max(sequence)):
+sequence=[0, -2, 5, 6]
+arr1 = sequence
+maxi = max(arr1)
+arr1.remove(maxi)
+cnt = 1
+for i in range (1, len(arr1)):
+    if(arr1[i-1]<arr1[i]):
+        pass
+    else:
+        cnt-=1
+cnt+=1
+mini= min(arr1)
+sequence.remove(mini)
+for i in range (1,len(sequence)):
+    if(sequence[i-1]<sequence[i]):
+        pass
+    else:
+        cnt-=1
+cnt+=1
+if(cnt>2):
     print(True)
-print(False)
+else:
+    print(False)
+
 # a=[1,2,3,4]
 # b=[]
 # c=iter(a)
