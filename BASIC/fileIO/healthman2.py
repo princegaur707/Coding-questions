@@ -3,7 +3,7 @@ from pygame import mixer
 from datetime import datetime
 from time import time
 
-def musicloop(file,stopper):#file having music stopper: when we wanna stop
+def musiconloop(file,stopper):#file having music stopper: when we wanna stop
     mixer.init()
     mixer.music.load(file)
     mixer.music.play()
@@ -18,7 +18,7 @@ def log_now(msg):
 
 
 if __name__=="__main__":
-    #musiconloop("water.mp3","stop")
+    musiconloop("water.mp3","stop")
     init_water=time()
     init_eyes=time()
     init_exercise=time()
@@ -39,7 +39,7 @@ if __name__=="__main__":
             init_eyes=time()
             log_now("Eyes relaxed at")
         
-        if time() - init_exercise > exesecs:
+        if time() - init_exercise > exsecs:
             print("Exercise time. Enter 'done' to stop the alarm. ")
             musiconloop('physical.mp3','done')
             init_exercise=time()
