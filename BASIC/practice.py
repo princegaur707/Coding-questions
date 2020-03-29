@@ -1,26 +1,9 @@
-sequence=[0, -2, 5, 6]
-arr1 = sequence
-maxi = max(arr1)
-arr1.remove(maxi)
-cnt = 1
-for i in range (1, len(arr1)):
-    if(arr1[i-1]<arr1[i]):
-        pass
-    else:
-        cnt-=1
-cnt+=1
-mini= min(arr1)
-sequence.remove(mini)
-for i in range (1,len(sequence)):
-    if(sequence[i-1]<sequence[i]):
-        pass
-    else:
-        cnt-=1
-cnt+=1
-if(cnt>2):
-    print(True)
-else:
-    print(False)
+arr=[1,2,3,4,5]
+arr1=[]
+arr1.extend(arr)
+arr.append([6,7])
+print(arr1)
+
 
 # a=[1,2,3,4]
 # b=[]
