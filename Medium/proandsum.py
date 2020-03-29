@@ -1,11 +1,12 @@
 def productExceptSelf(nums, m):
     f=[]
-    fa=1
     for j in range(len(nums)):
+        fa=1
         for i in range(len(nums)):
             if(j!=i):
                 fa*=nums[i]
         f.append(fa)
+        print(f)
     for i in range(len(f)):
         f[i]=f[i]%m
     g=sum(f)
