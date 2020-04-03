@@ -19,4 +19,3 @@ def almostIncreasingSequence(str1):
         return False
 while True:
     print(almostIncreasingSequence([1, 2, 1, 2]))
-
