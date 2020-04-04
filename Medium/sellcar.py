@@ -1,12 +1,12 @@
 t=int(input())
 while t:
-    s=k=i=0
     n=int(input())
     a=list(map(int,input().split()))
-    while i<n:
-        if(a[i]-k>0):
-            s+=a[i]-k
-            k+=1
-        i+=1 
-    print(s)
+    a.sort(reverse=True)
+    for i in range(len(a)):
+        if(a[i]-i >0):
+            a[i]-=i
+        else:
+            a[i]=0
+    print(sum(a)%(10**9+7))
     t-=1
