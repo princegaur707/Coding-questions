@@ -1,8 +1,9 @@
 #Counter
+#https://www.codechef.com/submit/LAPIN : counter will just see if the count of every element is same ( it will also consider 0 count too)
 from collections import Counter
 
 print("________________________________________________________________________________________")
-c=Counter("Allahabad")
+c=Counter("BAAllahabad")
 print(c) #elements are arranged in decreasing order of frequency(if frequency is same then  order of occurrence)
 #in form of dictionary with frequency as a value
 print("________________________________________________________________________________________")
