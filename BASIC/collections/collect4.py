@@ -3,13 +3,13 @@
 from collections import Counter
 
 print("________________________________________________________________________________________")
-c=Counter("BAAllahabad")
+c=Counter("BAAAAAllahabad")
 print(c) #elements are arranged in decreasing order of frequency(if frequency is same then  order of occurrence)
 #in form of dictionary with frequency as a value
 print("________________________________________________________________________________________")
 
 for i in c.elements():
-    print(i,end=" ")
+    print(i,end=" ")   #will print all elements after clubing together all multiple occurrences sorting on the basis of position
 print("\n________________________________________________________________________________________")
 
 print(c.elements())#It prints a location because it returns an itertool, not a specific data-container.
