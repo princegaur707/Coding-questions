@@ -6,7 +6,7 @@ from itertools import cycle,repeat
 
 
 # Gimme a list which has "Huri" string 5 times
-print(list(repeat("Huri", 5)))  #specifying no. of time repeat should run by defeault infinite
+print(list(repeat("Huri", 5)))  #specifying no. of time repeat should run and by defeault infinite
 
 
 for i in cycle("Huri"): #cannot give 2 arguments it will be infinite always
