@@ -1,3 +1,4 @@
+#Find two numbers who sum is equal to target
 class Solution:
     def twoSum(self, nums, target):
         d = {}
