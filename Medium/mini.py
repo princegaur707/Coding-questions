@@ -6,7 +6,7 @@ class Solution:
         while left < right:
             print(left,right)
             mid = (left + right) // 2           
-            if nums[mid] > nums[right]:
+            if nums[mid] > nums[right]: # If mid one is greater implies smallest will be in the right side of it
                 left = mid + 1
             else:  
                 right = mid
