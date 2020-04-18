@@ -13,5 +13,6 @@ class Solution:
             print(f"n: {n} tmp: {tmp} MAX:{currentMax} MIN: {currentMin} Ans:{ans} Ans1:{ans1}")
         return [ans,ans1]
 obj=Solution()
-print(obj.maxProduct([-2,3,-4]))          
+print(obj.maxProduct([-2,3,-4]))   
+       
  

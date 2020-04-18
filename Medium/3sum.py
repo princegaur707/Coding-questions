@@ -15,4 +15,4 @@ class Solution:
                     res.add((v, -v-x, x))
         return map(list, res)
 obj=Solution()
-obj.threeSum()
+print(obj.threeSum())
