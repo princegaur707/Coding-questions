@@ -1,16 +1,18 @@
-#Find two numbers who sum is equal to target
 class Solution:
-    def twoSum(self, nums, target):
-        dict1={}
-        for i in range(len(nums)):
-            dict1[i]=nums[i]
-        print("1",dict1)
-        dict1={value:key for key,value in dict1.items()}
-        print("2",dict1)
-        for key,value in dict1.items():
-            try:
-                return [dict1[target - key], value]
-            except:
-                dict1[n] = i
+    def findClosestElements(self, arr, k, x):
+        left, right = 0, len(arr) - k
+        while left < right:
+            print("Left,Right:   ",left,right)
+            mid = (left+right)//2
+            print("Mid:   ",mid)
+            if x - arr[mid] > arr[mid + k] - x:
+                print(x-arr[mid])
+                print(arr[mid+k]-x)
+                print("IF")
+                left = mid + 1
+            else:
+                print("Else")
+                right = mid
+        return arr[left:left + k]
 obj=Solution()
-print(obj.twoSum([3,3],6))
+print(obj.findClosestElements([1,2,3,4,6,7,8,9,10],4,9))

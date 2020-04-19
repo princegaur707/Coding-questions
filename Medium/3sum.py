@@ -13,6 +13,6 @@ class Solution:
                     d[-v-x] = 1
                 else:
                     res.add((v, -v-x, x))
-        return map(list, res)
+        return [*map(list,res)]
 obj=Solution()
-print(obj.threeSum())
+print(obj.threeSum([-1, 0, 1, 2, -1, -4]))
