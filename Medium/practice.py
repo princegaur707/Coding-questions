@@ -4,12 +4,13 @@ class Solution:
         dict1={}
         for i in range(len(nums)):
             dict1[i]=nums[i]
+        print("1",dict1)
         dict1={value:key for key,value in dict1.items()}
-        print(dict1)
+        print("2",dict1)
         for key,value in dict1.items():
             try:
                 return [dict1[target - key], value]
             except:
                 dict1[n] = i
 obj=Solution()
-print(obj.twoSum([2,7,8,9],9))
+print(obj.twoSum([3,3],6))
