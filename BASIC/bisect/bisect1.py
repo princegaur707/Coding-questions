@@ -1,3 +1,4 @@
+#https://www.geeksforgeeks.org/bisect-algorithm-functions-in-python/
 import bisect
 #bisect return the position to insert any element so that resultant list remain sorted
 ls=[1,2,3,4,4,6,7,8,9]
