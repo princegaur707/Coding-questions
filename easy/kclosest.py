@@ -10,7 +10,3 @@ class Solution:
         return arr[left:left+k]
 obj=Solution()
 print(obj.findClosestElements([1,2,3,4,5],4,3))
-                   
-            
-            
-        
