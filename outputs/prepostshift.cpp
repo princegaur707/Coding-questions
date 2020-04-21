@@ -1,3 +1,6 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
 int main()
 {
 int array[10] = {3, 0, 8, 1, 12, 8, 9, 2, 13, 10};

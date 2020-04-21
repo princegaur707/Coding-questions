@@ -8,6 +8,7 @@ class Solution:
             else:
                 ref[i] += 1
         nums=sorted(ref)
+        print("1",ref)        
         ans=[]
         for i, itemI in enumerate(nums):
             if itemI == 0:
