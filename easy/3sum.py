@@ -6,7 +6,9 @@ class Solution:
             if i not in ref:
                 ref[i] = 1
             else:
-                ref[i] += 1
+                ref[i] += 14
+        nums.sort()
+        print(nums)
         nums=sorted(ref)
         print("1",ref)    
         print("2",nums)    
