@@ -1,12 +1,10 @@
 class Solution:
-    def isValidSudoku(self, board):
-        for i in range(9):
-            for j in range(9):
-                if i!=j:
-                    if board[i][i]==board[i][j] or board[i][i]==board[j][i]:
-                        if board[i][j].isdigit():
-                            return False
-                    
-        return True
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        seen = []
+        for i, row in enumerate(board):
+            for j, c in enumerate(row):
+                if c != '.':
+                    seen += [(c,j),(i,c),(i/3,j/3,c)]
+        return len(seen) == len(set(seen))
 obj=Solution()
 print(obj.isValidSudoku([["8","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]))
