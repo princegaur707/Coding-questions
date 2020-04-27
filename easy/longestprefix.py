@@ -1,5 +1,5 @@
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs):
         rez = ''
         for letter in zip(*strs):
             if len(set(letter)) == 1:
@@ -7,4 +7,5 @@ class Solution:
             else:
                 break
         return rez
-obj
+obj=Solution()
+print(obj.longestCommonPrefix(["flower","flow","flight"]))
