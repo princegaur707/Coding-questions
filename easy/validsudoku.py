@@ -1,14 +1,12 @@
 class Solution:
     def isValidSudoku(self, board):
-        seen = []
-        for i, row in enumerate(board):
-            print("i,row:",i,row)
-            for j, c in enumerate(row):
-                print("i,col:",j,c)
-                if c != '.':
-                    seen += [(c,j),(i,c),(i//3,j//3,c)]
-                    print("seen:",seen)
-        return len(seen) == len(set(seen))
+        values=[]
+        for row,row_values in enumerate(board):
+            for column,value in enumerate(row_values):
+                if value!=".":
+                    values+=[(row,value),(value,column),(row//3,column//3,value)]
+                    #print(values)
+        return len(values)==len(set(values))
 obj=Solution()
 print(obj.isValidSudoku([["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]))
 # [["5","3",".",".","7",".",".",".","."]
@@ -20,4 +18,3 @@ print(obj.isValidSudoku([["5","3",".",".","7",".",".",".","."],["6",".",".","1",
 # ,[".","6",".",".",".",".","2","8","."]
 # ,[".",".",".","4","1","9",".",".","5"]
 # ,[".",".",".",".","8",".",".","7","9"]]
-

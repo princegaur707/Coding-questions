@@ -18,20 +18,3 @@ class Solution:
         return digits
 obj=Solution()
 print(obj.plusOne([9,9,9]))
-
-
-# class Solution:
-#     def plusOne(self, digits):
-#         k=num=0
-#         l=len(digits)
-#         for i in digits:
-#             num+=10**(l-1)*i
-#             l-=1
-#         num+=1
-#         print(num)
-#         ans=[]
-#         while num>0:
-#             ans.append(num%10)
-#             num//=10
-        
-#         return ans[::-1]
