@@ -1,3 +1,4 @@
+#check if the compression is useful or not
 # checking effectiveness of maximal string : for ex- aaaaabbbccc-a5b3c3
 t=int(input())
 while(t>0):
@@ -10,7 +11,6 @@ while(t>0):
         if(s[i-1]==s[i]):
             cnt+=1
         else:
-            
             if(cnt>0):
                 str2=str2+str(cnt)
                 cnt=1

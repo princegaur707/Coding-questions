@@ -1,6 +1,6 @@
 #https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/559/
 class Solution:
-    def plusOne(self, digits: List[int]) -> List[int]:
+    def plusOne(self, digits):
         if digits[-1]!=9:
             digits[-1]+=1
         else:

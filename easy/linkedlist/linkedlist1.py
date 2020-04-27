@@ -10,7 +10,7 @@ class LinkedList:
         if self.start==None:
             print("Linked list is empty")
         else:
-            self.start=self.start.next#no need to use anything to delete as python automatically deletes anything which is not pointed anywhere
+            self.start=self.start.next   #no need to use anything to delete as python automatically deletes anything which is not pointed anywhere
     def insertLast(self,value):
         newNode = node(value)
         if(self.start==None):

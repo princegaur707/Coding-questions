@@ -1,18 +1,16 @@
 class Solution:
-    def strStr(self, haystack, needle):
-        if needle == "" and haystack == "":
+    def strStr(self, haystack: str, needle: str) -> int:
+        h = len(haystack)
+        n = len(needle)
+        
+        if n == 0:
             return 0
-        elif haystack == "":
+        if h < n:
             return -1
-        elif needle == "":
-            return 0
-        elif len(needle) > len(haystack):
-            return -1
-        for i in range(len(haystack)):
-            if i + len(needle) > len(haystack):
-                break
-            if haystack[i:i + len(needle)] == needle:
-                return i
+        
+        for index in range(h-n+1):
+            if haystack[index:index+n] == needle:
+                return index
         return -1
 obj=Solution()
 print(obj.strStr(haystack = "hello", needle = "ll"))
