@@ -1,40 +1,53 @@
-#insert at last, delete first, view list
+#insert at last, delete first,delete last view list
 class node:
     def __init__(self,data):
         self.data=data
         self.next=None
-class LinkedList:
+class linkedlist:
     def __init__(self):
         self.start=None
-    def deletefirst(self):
+    def insert(self,value):
+        newNode=node(value)
         if self.start==None:
-            print("Linked list is empty")
-        else:
-            self.start=self.start.next   #no need to use anything to delete as python automatically deletes anything which is not pointed anywhere
-    def insertLast(self,value):
-        newNode = node(value)
-        if(self.start==None):
             self.start=newNode
         else:
             temp=self.start
-            while temp.next!=None:
+            while(temp.next!=None):
                 temp=temp.next
             temp.next=newNode
-    def viewlist(self):
+    def deletefirst(self):
         if self.start==None:
-            print("List is empty")
+            print("Linked list is empty!")
+        else:
+            self.start=self.start.next  #no need to use anything to delete as python automatically deletes anything which is not pointed anywhere
+    def deletelast(self):
+        if self.start==None:
+            print("Linked list is empty!")
+        if self.start.next==None:
+            self.start=None
         else:
             temp=self.start
-            while temp!=None:
-                print(temp.data,end=" ")
+            while(temp.next.next!=None):
                 temp=temp.next
-mylist=LinkedList()
-mylist.insertLast(10)   
-mylist.insertLast(20) 
-mylist.insertLast(30)
-mylist.insertLast(40)
-mylist.insertLast(50) 
-mylist.viewlist()
-mylist.deletefirst()
+            temp.next=None
+    def viewlist(self):
+        if self.start==None:
+            print("Linked list is empty!")
+        else:
+            temp=self.start
+            while(temp!=None):
+                print(temp.data, end=" ")
+                temp=temp.next   
+obj=linkedlist()  
+obj.insert(1)
+obj.insert(2)
+obj.insert(3)
+obj.insert(4)
+obj.insert(5)
+obj.viewlist()
 print("\n")
-mylist.viewlist()          
+obj.deletefirst()
+obj.viewlist()
+print("\n")
+obj.deletelast()
+obj.viewlist()     

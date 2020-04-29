@@ -1,6 +1,6 @@
 class node:
-    def __init__(self,value):
-        self.data=value
+    def __init__(self,data):
+        self.data=data
         self.next=None
 class linkedlist:
     def __init__(self):
@@ -18,7 +18,7 @@ class linkedlist:
         if self.start==None:
             print("Linked list is empty!")
         else:
-            self.start=self.start.next
+            self.start=self.start.next  #no need to use anything to delete as python automatically deletes anything which is not pointed anywhere
     def deletelast(self):
         if self.start==None:
             print("Linked list is empty!")
@@ -50,7 +50,3 @@ obj.viewlist()
 print("\n")
 obj.deletelast()
 obj.viewlist()     
-         
-
-        
-        
