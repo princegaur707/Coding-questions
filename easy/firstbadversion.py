@@ -34,4 +34,5 @@ class Solution:
         class Wrap:
             def __getitem__(self, i):
                 return isBadVersion(i)
-        return bisect.bisect(Wrap(), False, 0, n)
+        return bisect.bisect(Wrap(), False, 0, n)# finding where we can keep the false at the righmost possible place
+        #bisect(list, num, beg, end)
