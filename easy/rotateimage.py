@@ -25,3 +25,22 @@ print("After clockwise rotation: ",obj.rotate([[1,2,3],[4,5,6],[7,8,9]]))
 #                 for k in range(4):
 #                     matrix[row][col] = tmp[(k - 1) % 4]
 #                     row, col = col, n - 1 - row
+
+
+class Solution:
+    def rotate(self, m: List[List[int]]) -> None:
+        n = len(m) 
+        def transpose():
+            
+            for col in range(n):
+                
+                for row in range(col):
+
+                    m[row][col],m[col][row] = m[col][row],m[row][col]
+        
+        transpose()
+
+        for row in m:
+            row.reverse()
+        
+        return m
