@@ -1,52 +1,56 @@
-class node:
-    def __init__(self,data):
-        self.data=data
-        self.next=None
-class linkedlist:
-    def __init__(self):
-        self.start=None
-    def insert(self,value):
-        newNode=node(value)
-        if self.start==None:
-            self.start=newNode
+class Stack:
+    def __init__(self,maxsize):
+        self.top=-1
+        self.maxsize=maxsize
+        self.stack=[0]*maxsize
+    
+    def isfull(self):
+        if self.top>self.maxsize-1:
+            print("Stack overflow!")
+            return True
+        print("Stack is not full!")
+        return False
+
+    def isempty(self):
+        if self.top<0:
+            print("Stack underflow!")
+            return True
+        print("\nStack in not Empty!")
+        return False
+    
+    def push(self,value):
+        if self.isfull():
+            return False
         else:
-            temp=self.start
-            while(temp.next!=None):
-                temp=temp.next
-            temp.next=newNode
-    def deletefirst(self):
-        if self.start==None:
-            print("Linked list is empty!")
+            self.top+=1
+            self.stack[self.top]=value
+            return True
+    
+    def pop(self):
+        if self.isempty():
+            return False
         else:
-            self.start=self.start.next  #no need to use anything to delete as python automatically deletes anything which is not pointed anywhere
-    def deletelast(self):
-        if self.start==None:
-            print("Linked list is empty!")
-        if self.start.next==None:
-            self.start=None
+            var=self.stack[self.top]
+            self.top-=1
+            print("pop number:",var)
+            return var
+    
+    def peek(self):
+        if self.isempty():
+            return False
         else:
-            temp=self.start
-            while(temp.next.next!=None):
-                temp=temp.next
-            temp.next=None
-    def viewlist(self):
-        if self.start==None:
-            print("Linked list is empty!")
+            return self.stack[self.top]
+     
+    def view(self):
+        if self.isempty():
+            return False
         else:
-            temp=self.start
-            while(temp!=None):
-                print(temp.data, end=" ")
-                temp=temp.next   
-obj=linkedlist()  
-obj.insert(1)
-obj.insert(2)
-obj.insert(3)
-obj.insert(4)
-obj.insert(5)
-obj.viewlist()
-print("\n")
-obj.deletefirst()
-obj.viewlist()
-print("\n")
-obj.deletelast()
-obj.viewlist()     
+            temp=self.top
+            while temp!=-1:
+                print(self.stack[temp],end=" ")
+                temp-=1
+
+obj=Stack(5)
+obj.push(1);obj.push(2);obj.push(3),obj.push(4),obj.push(5);obj.view()
+obj.pop();obj.view()
+print(obj.peek())
