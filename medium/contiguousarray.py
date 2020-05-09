@@ -1,20 +1,19 @@
 class Solution:
     def findMaxLength(self, nums):
-        count = 0
-        max_length=0
-        table = {0: 0}
-        for index, num in enumerate(nums, 1):
-            if num == 0:
-                count -= 1
+        d = {0: -1}    # Considering nothing at -1 position instead of index and starting indexing from 1
+        key, maxL = 0, 0
+        for i in range(len(nums)):
+            print("i,key:   ",i,key)
+            key += nums[i] or -1
+            if key not in d:
+                print("If")
+                d[key] = i
             else:
-                count += 1
-            
-            if count in table:
-                max_length = max(max_length, index - table[count])
-            else:
-                table[count] = index
-        
-        return max_length
-
+                print("Else")
+                maxL = max(maxL, i-d[key])
+            print("i,key,maxL: ",i,key,maxL)
+            print("d:  ",d)
+            print("_____________________________________________________________________________")
+        return maxL
 obj=Solution()
 print(obj.findMaxLength([0, 0, 1, 0, 0, 0, 1, 1]))
