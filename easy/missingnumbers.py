@@ -9,5 +9,5 @@ def findDisappearedNumbers(nums):
         nums[index] = -abs(nums[index])
         print("num,index,nums[index]",num,index,nums[index])
         print("nums:",nums)
-    return [i + 1 for i, num in enumerate(nums) if num > 0]
+    return [i for i, num in enumerate(nums,1) if num > 0]
 print(findDisappearedNumbers([4,3,2,7,8,2,3,1]))
