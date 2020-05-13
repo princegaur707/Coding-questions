@@ -1,5 +1,5 @@
 class Solution:
-    def removeKdigits(self, num: str, k: int) -> str:
+    def removeKdigits(self, num, k) :
         res = []
         counter = 0
         n = len(num)
@@ -18,4 +18,6 @@ class Solution:
             k -= 1
 
         return "".join(res).lstrip('0') or "0"
-        
+
+obj=Solution()
+print(removeKdigits("1432219",3))
