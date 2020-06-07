@@ -14,4 +14,4 @@ class Solution:
         return res
 
 obj=Solution()
-obj.letterCasePermutation("12a34b")
+print(obj.letterCasePermutation("a1b2"))
