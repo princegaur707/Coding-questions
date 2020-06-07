@@ -1,5 +1,5 @@
 class Solution:
-    def letterCasePermutation(S):
+    def letterCasePermutation(self,S):
         res = [S]
         l=len(S)
         for i in range(l):
@@ -14,4 +14,4 @@ class Solution:
         return res
 
 obj=Solution()
-print(obj.letterCasePermutation("a1b2"))
+print(obj.letterCasePermutation("12a34b"))
