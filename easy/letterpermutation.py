@@ -1,5 +1,5 @@
 class Solution:
-    def letterCasePermutation(self, S: str) -> List[str]:
+    def letterCasePermutation(S):
         res = [S]
         l=len(S)
         for i in range(l):
@@ -12,3 +12,6 @@ class Solution:
                 tmp.append(r[:i] + r[i].lower() + r[i + 1:])
             res = tmp
         return res
+
+obj=Solution()
+obj.letterCasePermutation("12a34b")
