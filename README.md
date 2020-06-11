@@ -1,2 +1,2 @@
 # Coding-questions
-contains basic,medium advanced coding questions which i am doing during my competitive coding journey
+contains basic, easy, medium, hard level coding questions which I am doing during my competitive coding journey.
