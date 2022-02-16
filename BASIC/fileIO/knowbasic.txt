@@ -1,0 +1,9 @@
+"r" - means open in read mode, which is the default.
+"w" - means write mode, for rewriting the contents of a file.
+"a" - means append mode, for adding new content to the end of the file.
+"b" - mode opens it in binary mode, which is used for non-text files (such as image and sound files).
+"r+" - Opens a file for both reading and writing. The file pointer placed at the beginning of the file.
+"w+" - Opens a file for both writing and reading. Overwrites the existing file if the file exists.
+If the file does not exist, creates a new file for reading and writing.
+"a+" - Opens a file for both appending and reading. The file pointer is at the end of the file if the file exists. The file opens in the append mode.
+If the file does not exist, it creates a new file for reading and writing. It can also be combined with "b".
